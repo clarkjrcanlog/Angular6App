@@ -1,0 +1,45 @@
+<form [formGroup]="todoForm" class="form-horizontal">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">Simple Todo</h3>
+    </div>
+    <div class="panel-body">
+
+      <div class="well">
+
+        <div class="form-group">
+          <div class="col-md-offset-2 col-md-4">
+            <button type="button" class="btn btn-primary" (click)="addTaskButtonClick()"
+            [disabled]="todoForm.get('tasks').invalid">
+            Add Task
+          </button>
+          </div>
+        </div>
+
+        <div formArrayName="tasks" *ngFor="let task of todoForm.get('tasks').controls; let i = index">
+          <div [formGroupName]="i">
+            <div class="form-group" [ngClass]="{'has-error': task.get('taskList').invalid && task.get('taskList').touched}">
+              <label class="col-sm-2 control-label" [attr.for]="'taskList'+i">
+                Task
+              </label>
+              <div class="col-sm-4">
+                <input type="text" class="form-control" [id]="'taskList'+i" formControlName="taskList"
+                placeholder="Enter some Task">
+                <span class="help-block" *ngIf="task.get('taskList').errors?.required &&
+                task.get('taskList').touched">
+                Field is required
+              </span>
+              </div>
+              <div class="col-sm-6" *ngIf="todoForm.get('tasks').length>1">
+                  <button type="button" class="btn btn-danger btn-sm pull-right" title="Delete Skill"
+                    (click)="removeSkillButtonClick(i)">
+                    <span class="glyphicon glyphicon-remove"></span>
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

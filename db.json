@@ -1,0 +1,91 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "fullName": "Clark",
+      "contactPreference": "email",
+      "email": "clark@gmail.com",
+      "phone": "5641238971",
+      "skills": [
+        {
+          "skillName": "C#",
+          "experienceInYears": 1,
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "Java",
+          "experienceInYears": 2,
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "JavaScript",
+          "experienceInYears": "1",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "asd",
+          "experienceInYears": "asd",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "asd",
+          "experienceInYears": "asd",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "asd",
+          "experienceInYears": "asd213",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "123",
+          "experienceInYears": "434",
+          "proficiency": "intermediate"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fullName": "John",
+      "contactPreference": "phone",
+      "email": "john@email.com",
+      "phone": "3242138971",
+      "skills": [
+        {
+          "skillName": "Angular",
+          "experienceInYears": 2,
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "HTML",
+          "experienceInYears": 2,
+          "proficiency": "intermediate"
+        },
+        {
+          "skillName": "LINQ",
+          "experienceInYears": 3,
+          "proficiency": "advanced"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fullName": "Kurt",
+      "contactPreference": "email",
+      "email": "kurt@gmail.com",
+      "phone": "",
+      "skills": [
+        {
+          "skillName": "java",
+          "experienceInYears": "2",
+          "proficiency": "beginner"
+        },
+        {
+          "skillName": "android",
+          "experienceInYears": "1",
+          "proficiency": "beginner"
+        }
+      ]
+    }
+  ]
+}
